@@ -1,4 +1,64 @@
-.App {
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  color: white;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.app__header {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__main {
+  padding: 100px 0;
+  background: #fc466b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #3f5efb,
+    #fc466b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #3f5efb,
+    #fc466b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card {
+  border: solid 1px white;
+  padding: 50px;
+  border-radius: 10px;
+  margin: 150px;
+}
+
+.card__title {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.card__title::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.card__description {
+  font-size: 14px;
+  text-align: justify;
 }
